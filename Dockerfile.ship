@@ -1,0 +1,4 @@
+FROM python:3.11-slim
+WORKDIR /app
+COPY ship_proxy.py /app/
+CMD ["python", "ship_proxy.py", "--offshore-host", "offshore", "--offshore-port", "9000"]
